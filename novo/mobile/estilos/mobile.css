@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+span#burguer {
+    background-color:	#FFD700;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+header nav {
+    display: block;
+}
+
+header li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: red;
+    background-color: rgb(255, 255, 96);
+    border-top: 1px solid white;
+}
+
+
+

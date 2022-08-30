@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+:root {
+    --1: #FF0000;
+    --2: #FFD700;
+    --3: #FFFF00;
+    --4: #228B22;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: var(--3);
+    display: block;
+}
+
+header p {
+    padding: 20px;
+    text-shadow: 1px 1px 1px #0000006b;
+    color: var(--1);
+    display: block;
+    
+}
+
+header div#topo {
+    display: block;
+}
+
+header div#logo {
+    width: 120px;
+    height: 120px;
+    background: url(../midias/LOGO\ -\ NEABI.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 5px;
+    display: flex;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header li {
+    display: inline;
+}
+
+header li a {
+    text-decoration: none;
+    text-align: center;
+    color: red;
+    background-color: rgb(255, 255, 96);
+    border-top: 1px solid white;
+}
+
+header li a:hover {
+    background-color: var(--4);
+}
+
+span#burguer {
+    display: none;
+}
+
+main {
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../midias/girafa.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+footer {
+    color: var(--1);
+    text-align: center;
+    font-size: 0.8em;
+}

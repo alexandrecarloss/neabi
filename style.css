@@ -1,0 +1,89 @@
+@charset "UTF-8";
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header div#logo{
+    height: 150px;
+    width: auto;
+    background-color: rgb(235, 198, 153);
+    display: flex;
+    flex-direction: column;
+}
+
+header div#logo img{
+    max-width: 150px;
+    max-height: 100px;
+    margin: auto;
+}
+
+header div#logo h1 {
+    padding: 5px;
+    font-family: cursive;
+    margin: 0 auto 10px auto;
+    max-height: 30px;
+}
+
+header nav#container{
+    height: 30px;
+    max-width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav#container ul {
+    list-style-type: none;
+}
+
+header nav#container li.botão {
+    display: inline-block;
+    min-width: 105px;
+    height: 20px;
+    margin: 0px 5px;
+    background-color: rgb(60, 123, 120);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+header nav#container li.botão a{
+    padding: 5px;
+    color: black;
+}
+
+header nav#container li.botão a:hover {
+    color: red;
+}
+
+main{
+    background-color: chartreuse;
+    min-height: 500px;
+    display: flex;
+}
+
+main div#slide{
+    margin: 5% 0 10px 5%;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+main div#imgfundo{
+    width: 100%;
+    height: 600px;
+    background-image: url(midia/LOGO\ -\ NEABI.png);
+    background-attachment: fixed;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+footer{
+    background-color: rgb(162, 162, 221);
+    text-align: center;
+}
