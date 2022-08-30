@@ -42,7 +42,6 @@ header div#logo {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    
 }
 
 header ul {
@@ -73,11 +72,21 @@ span#burguer {
 main {
     margin: auto;
     width: 100vw;
+    max-width: 768px;
     height: 100vh;
+    background-color: var(--4);
     background-image: url(../midias/girafa.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main h1 {
+    padding: 10px;
+}
+main p {
+    padding: 10px;
 }
 
 div#navegação {
