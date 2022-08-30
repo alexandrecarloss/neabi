@@ -4,10 +4,11 @@ header div#topo {
     display: flex;
 }
 
-header nav {
+header nav#menu {
     padding: 10px;
     justify-content: center;
     display: flex;
+
 }
 
 header li {

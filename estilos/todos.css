@@ -32,6 +32,7 @@ header p {
 
 header div#topo {
     display: block;
+    align-items: center;
 }
 
 header div#logo {
@@ -41,8 +42,7 @@ header div#logo {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 5px;
-    display: flex;
+    
 }
 
 header ul {
