@@ -9,6 +9,7 @@ header nav {
     justify-content: center;
     display: flex;
 }
+
 header li {
     padding: 10px;
 }

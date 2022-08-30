@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+header div#topo {
+    display: flex;
+}
+
 span#burguer {
     background-color:	#FFD700;
     color: black;

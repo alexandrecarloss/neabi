@@ -7,9 +7,13 @@
     --4: #228B22;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
-    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     width: 100vw;
 }
@@ -19,8 +23,15 @@ header {
     display: block;
 }
 
+header p {
+    padding: 20px;
+    text-shadow: 1px 1px 1px #0000006b;
+    color: var(--1);
+    display: block;
+}
+
 header div#topo {
-    display: flex;
+    display: block;
 }
 
 header div#logo {
@@ -30,45 +41,33 @@ header div#logo {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    float: left;
-}
-
-header p {
-    float: center;
-    text-align: left;
-    padding: 20px;
-    text-shadow: 1px 1px 1px #0000006b;
-    color: var(--1);
-}
-
-span#burguer {
-    background-color:	#FFD700;
-    color: black;
-    float: right;
     padding: 5px;
-    cursor: pointer;
-    display: block;
-}
-
-header nav {
-    display: block;
+    display: flex;
 }
 
 header ul {
     list-style-type: none;
 }
 
+header li {
+    display: inline;
+}
+
 header li a {
-    display: block;
     text-decoration: none;
     text-align: center;
     color: red;
-    background-color: rgb(255, 255, 96);
-    border-top: 1px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
 header li a:hover {
-    background-color: var(--4);
+    color: var(--4);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+}
+
+span#burguer {
+    display: none;
 }
 
 main {
@@ -79,6 +78,34 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+div#navegação {
+    background-color: rgba(137, 43, 226, 0.347);
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+nav#menub {
+    display: block;
+}
+
+nav#menub ul {
+    list-style-type: none;
+}
+
+nav#menub li {
+    list-style-type: none;
+}
+
+nav#menub a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: red;
+    background-color: rgb(255, 255, 96);
+    border-top: 1px solid white;
 }
 
 footer {
