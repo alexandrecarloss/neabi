@@ -72,8 +72,6 @@ span#burguer {
 main {
     width: 100vw;
     height: 100vh;
-    background-color: var(--4);
-    background-image: url(../midias/girafa.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
