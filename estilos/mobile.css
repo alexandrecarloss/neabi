@@ -26,5 +26,9 @@ header li a {
     border-top: 1px solid white;
 }
 
+nav#menub ul {
+    display: block;
+}
+
 
 
