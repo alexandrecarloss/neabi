@@ -1,89 +1,288 @@
-@charset "UTF-8";
-* {
-    margin: 0%;
-    padding: 0%;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+.header{
+    width: 100%;
+    background-color: hsl(0, 33%, 99%);
+    background-position: center;
+    background-size: cover;
+    justify-content: space-between;
 }
 
-header div#logo{
-    height: 150px;
-    width: auto;
-    background-color: rgb(235, 198, 153);
+body{
+    background: rgb(4,21,36);
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}  
+
+button{
+      padding: 5px 20px;
+      font-weight: 600;
+      font-size: 16px;
+      background-color: (0,136,169,1);
+      border: none;
+      text-decoration: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: (0,136,169,0.8);
+}
+
+nav{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.logo{
+    background-position: center;
+    position: relative;
+    width: 170px;
+    margin: 11px 0;
+    cursor: pointer;
+    transition: 0.6s;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+}
+
+nav ul{
+    background: #343435;
+    width: 100%;
+    margin-top: 10px;
+    max-height: 50px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+nav li a{
+    transition: all 0.3s ease 0s;
+}
+
+nav li a:hover {
+    color: #0088a9;
+}
+
+.text{
+    padding: 20px 8%;
+}
+
+.slide{
+    width: 1024px;
+    height: 576px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.4s;
+}
+
+.slides{
+    width: 5120px;
     display: flex;
-    flex-direction: column;
 }
 
-header div#logo img{
-    max-width: 150px;
-    max-height: 100px;
-    margin: auto;
+.image img{
+    width: 1024px;
+    height: 576px;  
 }
 
-header div#logo h1 {
-    padding: 5px;
-    font-family: cursive;
-    margin: 0 auto 10px auto;
-    max-height: 30px;
+#atual{
+    transition: all 2s;
 }
 
-header nav#container{
-    height: 30px;
-    max-width: 100%;
-    background-color: aqua;
+.btn{
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+}
+
+.btn:hover{
+    transform: scale(1.5);
+}
+
+#voltar{
+    top: 50%;
+    left: 3%;
+}
+
+#next{
+    top: 50%;
+    right: 50%;
+}
+
+.balls{
+    position: absolute;
+    width: 1024px;
     display: flex;
     justify-content: center;
+    margin-top: -45px;
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 3px solid #fff;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right:15px;
+    cursor: pointer;
+}
+
+.balls div:hover{
+    background: #fff;
+}
+
+.imgAtual{
+    transition: all 0.5s;
+    background: #fff;
+}
+
+.banner{
+    background: url(img/Neabi.png);
+    width: 100%;
+    height: 50vh;
+}
+
+.footer.footer{
+    background: #343435;
+    position: relative;
+}
+
+
+.fale-conosco a{
+    text-decoration: none;
+}
+
+.contato{
+    margin-left: 45px;
+}
+
+.footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+
+.footer h2{
+    color:#f7f7f7;
+}
+
+.footer p{
+    font-size: 15px;
+    color: hsl(262, 20%, 89%);
+}
+
+.footer .sobre-nos{
+    margin-left: 30px;
+}
+
+.rede-sociais{
+    color: #fff;
     align-items: center;
 }
 
-header nav#container ul {
-    list-style-type: none;
+.rede-sociais .fa-facebook-f{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: hsl(224, 100%, 56%);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-header nav#container li.botão {
-    display: inline-block;
-    min-width: 105px;
-    height: 20px;
-    margin: 0px 5px;
-    background-color: rgb(60, 123, 120);
-    border-radius: 5px;
-    border: 1px solid black;
+.rede-sociais .fa-facebook-f:hover{
+    color: #fff;
+    transform: translateY(-9);
 }
 
-header nav#container li.botão a{
-    padding: 5px;
-    color: black;
+.rede-sociais .fa-twitter{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: hsl(197, 70%, 47%);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-header nav#container li.botão a:hover {
-    color: red;
+.rede-sociais .fa-twitter:hover{
+    color: #fff;
+    transform: translateY(-9);
 }
 
-main{
-    background-color: chartreuse;
-    min-height: 500px;
-    display: flex;
+.rede-sociais .fa-instagram{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: hsl(313, 83%, 60%);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-main div#slide{
-    margin: 5% 0 10px 5%;
-    width: 600px;
-    height: 500px;
-    border: 1px solid black;
+.rede-sociais .fa-instagram:hover{
+    color: #fff;
+    transform: translateY(-9);
 }
 
-main div#imgfundo{
-    width: 100%;
-    height: 600px;
-    background-image: url(midia/LOGO\ -\ NEABI.png);
-    background-attachment: fixed;
-    background-position: center right;
-    background-repeat: no-repeat;
+.rede-sociais .fa-whatsapp{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: hsl(125, 87%, 54%);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-footer{
-    background-color: rgb(162, 162, 221);
+.rede-sociais .fa-whatsapp:hover{
+    color: #fff;
+    transform: translateY(-9);
+}
+
+
+.texto-copy{
+    color: hsl(128, 86%, 53%);
     text-align: center;
 }
+
+
