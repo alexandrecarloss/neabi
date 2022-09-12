@@ -9,33 +9,39 @@
     <title>NEABI</title>
 </head>
 <body>
-    <div class="header">
-      <nav id="navbar">
-        <img src="img/giftlogo.gif" class="logo">
-        <ul id="menu">
-          <li>Tela Inicial</li>
-          <li>O NEABI</li>
-          <li>Equipe</li>
-          <li>Projetos</li>
-          <li>Eventos</li>
-          <li>Publicação</li>
-          <a class="cta" href="#"><button>Contato</button></a>
-        </ul>
-      </nav>
-    </div>
-
+  <header id="header">
+        <div id="logo">
+          <img src="img/giftlogo.gif" class="logo">
+        </div>    
+    
+    <nav id="nav">
+      <button id="btn-mobile" aria-controls="menu" aria-haspopup="true" aria-label="Abrir Menu" aria-expanded="false">
+        <span id="hamburguer">
+          
+        </span> 
+       </button>
+        <ul id="menu" role="menu">
+            <li><a href="index.html" target="_self">Página inicial</a></li>
+            <li><a href="o_neabi/o_neabi.html" target="_self">O NEABI</a></li>
+            <li><a href="equipe/equipe.html" target="_self">Equipe</a></li>
+            <li><a href="projetos/projetos.html" target="_self">Projetos</a></li>
+            <li><a href="eventos/eventos.html" target="_self">Eventos</a></li>
+            <li><a href="publicação/publicação.html" target="_self">Publicação</a></li>
+            <li><a href="contato/contato.html" target="_self">Contato</a></li>
+        </ul> 
+    </nav>
+     
+</header>
+<main>
     <div class="slide">
-      
+    
       <div class="slides">
-
-
           <div id="voltar" class="btn">
             <i class="fas fa-chevron-left"></i>
           </div>
           <div id="next" class="btn">
             <i class="fas fa-chevron-right"></i>
           </div>
-
           <div id="atual" class="image">
             <img src="img/front-view-young-male-student-in-white-t-shirt-wearing-black-mask-and-holding-yellow-files-on-light-blue-background.jpg" alt="">
             </div>
@@ -47,16 +53,17 @@
           </div>
           <div class="image">
             <img src="img/Neabi.png" alt="">
-      
+    
           </div>
         </div>
         <div class="balls">
         </div>
       </div>
-
-   <div class="banner"></div>
+    
+        <div class="banner"></div>
+  </main>
   
-  <footer class="footer">
+<footer class="footer">
   <div class="container">     
     <div class="Membros">
       <h2>Membros</h2>
@@ -159,5 +166,5 @@
     }
   },4000)
 </script>
-
+<script src="script.js"></script>
 </html>
