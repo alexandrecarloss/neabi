@@ -7,17 +7,20 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* Menu */
-
-header a {
-    color: black;
-    text-decoration: none;
-    font-family: sans-serif;
+body{
+    background: rgb(4,21,36);
+    
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-header a:hover {
-    background: rgba(0, 0, 0, 0.5);
-    font-weight: bold;
+#header {
+    box-sizing: border-box;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    background: #e7e7e7;
 }
 
 header #logo {
@@ -26,167 +29,25 @@ header #logo {
     display: flex;
 }
 
-#header {
-    box-sizing: border-box;
-    height: 130px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #e7e7e7;
-}
-
-ul#menu {
-    display: flex;
-    list-style: none;
-    gap: .5rem;
-}
-
-#menu a {
-    display: block;
-    padding: .5rem;
-}
-
-#btn-mobile {
+header #btn-mobile {
     display: none;
 }
 
-@media (max-width: 600px) {
-
-    body {
-        width: 600px;
-    }
-
-    #btn-mobile {
-        display: block;
-        position: absolute;
-        right: 10px;
-    }
-
-    #btn-mobile:hover {
-        transform: scale(1.5);
-    }
-
-    #header {
-        width: 100vw;
-    }
-
-    #menu {
-        width: 100%;
-        background-color: #e7e7e7;
-        height: 0px;
-        transition: .6s;
-        z-index: 1000;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
-    #nav.active li {
-        display: block;
-    }
-    
-    #nav.active #menu {
-        gap: 5px; 
-        height: 100vh;
-        display: block;
-        overflow-y: scroll;
-        visibility: visible;      
-    }
-
-    #menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-    }
-
-    #btn-mobile {
-        display: block;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        gap: .5rem;
-    }
-
-    #hamburguer {
-        width: 20px;
-        border-top: 2px solid;
-        display: block;
-        
-    }
-
-    #hamburguer::after, #hamburguer::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-
-    #nav.active #hamburguer {
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburguer::before {
-        transform: rotate(135deg);
-    }
-
-    #nav.active #hamburguer::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-}
-
-.header{
-    width: 100%;
-    background-color: hsl(0, 33%, 99%);
-    background-position: center;
-    background-size: cover;
-    justify-content: space-between;
-}
-
-body{
-    background: rgb(4,21,36);
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-}  
-
-/* button{
-      padding: 5px 20px;
-      font-weight: 600;
-      font-size: 16px;
-      background-color: (0,136,169,1);
-      border: none;
-      text-decoration: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: (0,136,169,0.8);
-} */
-
- nav{
+nav{
+    height: 100%;
     width: 100%;
     padding: 0;
-    text-align: center;
-    
+    text-align: center; 
 }
 
-
-
 nav ul{
+    margin: 0px;
+    list-style: none;
+    gap: .5rem;
     background: #343435;
     width: 100%;
     margin-top: 10px;
-    max-height: 50px;
+    height: 100%;
     
 }
 
@@ -197,16 +58,21 @@ nav ul li{
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+} 
 
-}
-
-nav li a{
+header a {
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
     transition: all 0.3s ease 0s;
 }
 
-nav li a:hover {
+header a:hover {
+    background: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
     color: #0088a9;
-} 
+}
 
 .text{
     padding: 20px 8%;
@@ -221,11 +87,12 @@ nav li a:hover {
 }
 
 .slides{
-    width: 5120px;
+    width: 100vw;
+    /* width: 5120px; */
     display: flex;
 }
 
-.image img{
+.image img {
     width: 1024px;
     height: 576px;  
 }
@@ -311,10 +178,11 @@ nav li a:hover {
 .footer.footer .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
+    align-items: center;
 }
 
 .footer.footer .container > div{
+    text-align: center;
     flex-grow: 1;
     flex-basis: 0;
     padding: 3rem 0.9rem;
