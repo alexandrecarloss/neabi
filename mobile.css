@@ -21,6 +21,7 @@ button#btn-mobile {
 
 #nav.active li {
     display: block;
+    height: auto;
 }
 
 #nav.active #menu {
@@ -47,7 +48,7 @@ button#btn-mobile {
     background: none;
     cursor: pointer;
     gap: .5rem;
-    
+    top: 50px;
 }
 
 #btn-mobile:hover {
