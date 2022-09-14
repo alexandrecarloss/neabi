@@ -86,24 +86,25 @@ button#btn-mobile {
 }
 
 .image img {
-    width: 600px;
+    width: 100vw;
     height: 300px;  
 }
 
 .slide {
-    width: 600px;
+    width: 100vw;
     height: 300px;
 }
+
 .slides{
-    width: 2400px;
+    width: auto;
 }
 
 .balls {
-    width: 600px;
+    width: 100vw;
 }
 
 #atual {
-    width: 600px;
+    width: 100vw;
 }
 
 .footer.footer .container {
