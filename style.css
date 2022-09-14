@@ -84,9 +84,9 @@ header a:visited {
 .text {
     padding: 20px 8%;
 }
-
+ /* main */
 .slide {
-    width: 1024px;
+    width: 100vw;
     height: 576px;
     overflow: hidden;
     border-radius: 15px;
@@ -94,12 +94,12 @@ header a:visited {
 }
 
 .slides {
-    width: 5120px;
+    width: 100vw;
     display: flex;
 }
 
 .image img {
-    width: 1024px;
+    width: 100vw;
     height: 576px;  
 }
 
@@ -137,7 +137,7 @@ header a:visited {
 
 .balls {
     position: absolute;
-    width: 1024px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     margin-top: -45px;
@@ -163,15 +163,15 @@ header a:visited {
 
 .banner {
     background: url(img/Neabi.png);
-    width: 100%;
+    width: 100vw;
     height: 50vh;
 }
 
+ /* footer */
 .footer.footer {
     background: #343435;
     position: relative;
 }
-
 
 .fale-conosco a {
     text-decoration: none;
