@@ -35,7 +35,6 @@
 </header>
 <main>
     <div class="slide">
-    
       <div class="slides">
           <div id="voltar" class="btn">
             <i class="fas fa-chevron-left"></i>
@@ -54,16 +53,14 @@
           </div>
           <div class="image">
             <img src="img/Neabi.png" alt="">
-    
           </div>
         </div>
         <div class="balls">
         </div>
       </div>
-    
         <div class="banner"></div>
   </main>
-  
+
 <footer class="footer">
   <div class="container">     
     <div class="Membros">
@@ -71,7 +68,6 @@
       <p>Paulo de Oliveira Nascimento</p>
       <p>Elmar Cordeiro da Silva</p>
       <p>Roberta Enir Faria Neves de Lima</p>
-
     </div>
     
     <div class="contato">
@@ -117,6 +113,8 @@
    var next = document.getElementById("next")
    var voltar =  document.getElementById("voltar")
    var rolar = true
+  // Adicionei variável widthimg para ter o valor da largura da imagem atual
+   var widthimg = document.getElementById("atual").offsetWidth
 
    for(let i=0; i < quant.length; i++){
        var div = document.createElement("div")
@@ -154,7 +152,14 @@
       atual = quant.length-1
     }
     document.querySelector(".imgAtual").classList.remove("imgAtual")
-    imagem.style.marginLeft = -1024*atual+"px"
+    
+    //Usei a variável widthimg no lugar de 1024
+    imagem.style.marginLeft = -widthimg*atual+"px"
+    window.addEventListener('resize', function () {
+      if (largura < 768) 
+      imagem.style.marginLeft = -widthimg*atual+"px"
+    });
+
     document.getElementById(atual).classList.add("imgAtual")
   }
   setInterval(()=>{
