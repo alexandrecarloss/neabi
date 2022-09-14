@@ -75,6 +75,7 @@ header a:hover {
     background: rgba(0, 0, 0, 0.5);
     font-weight: bold;
     color: #0088a9;
+    font-size: 1.2em;
 }
 
 header a:visited {
