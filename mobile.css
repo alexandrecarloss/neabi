@@ -109,6 +109,11 @@ button#btn-mobile {
     width: 100vw;
 }
 
+main #containercontato {
+    grid-template-columns: 1fr;
+    background-color: white;
+}
+
 .footer.footer .container {
     display: grid;
     grid-template-columns: 1fr;

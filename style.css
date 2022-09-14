@@ -82,6 +82,10 @@ header a:visited {
     color: blue;
 }
 
+header a:visited:hover {
+    color: #0088a9;
+}
+
 .text {
     padding: 20px 8%;
 }
@@ -166,6 +170,11 @@ header a:visited {
     background: url(img/Neabi.png);
     width: 100vw;
     height: 50vh;
+}
+
+main #containercontato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
  /* footer */
