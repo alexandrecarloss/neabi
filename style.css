@@ -34,31 +34,37 @@ header #btn-mobile {
     display: none;
 }
 
-nav{
+nav {
     width: 100%;
     padding: 0;
     text-align: center; 
     top: 65px;
+    align-items: center;
 }
 
-nav ul{
+nav ul {
+    display: flex;
     list-style: none;
-    gap: .5rem;
-    background: #343435;
-    width: 100%;
-      
+    height: 130px;
+    width: 100%; 
+    background: #e7e7e7; 
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-nav ul li{
-    display: inline-block;
+nav ul li {
+    display: block;
     list-style: none;
-    margin: 0px 30px;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
 } 
 
 header a {
+    padding: 20px;
+    margin: 10px;
     color: black;
     text-decoration: none;
     font-family: sans-serif;
@@ -71,7 +77,11 @@ header a:hover {
     color: #0088a9;
 }
 
-.text{
+header a:visited {
+    color: blue;
+}
+
+.text {
     padding: 20px 8%;
 }
 
@@ -83,7 +93,7 @@ header a:hover {
     transition: all 0.4s;
 }
 
-.slides{
+.slides {
     width: 5120px;
     display: flex;
 }
@@ -93,11 +103,11 @@ header a:hover {
     height: 576px;  
 }
 
-#atual{
+#atual {
     transition: all 2s;
 }
 
-.btn{
+.btn {
     position: absolute;
     color: #fff;
     padding: 10px;
@@ -111,16 +121,16 @@ header a:hover {
     margin-top: -5px;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.5);
 }
 
-#voltar{
+#voltar {
     top: 50%;
     left: 3%;
 }
 
-#next{
+#next {
     top: 50%;
     right: 50%;
 }
@@ -133,7 +143,7 @@ header a:hover {
     margin-top: -45px;
 }
 
-.balls div{
+.balls div {
     transition: all 0.5s;
     border: 3px solid #fff;
     padding: 6px;
@@ -142,32 +152,32 @@ header a:hover {
     cursor: pointer;
 }
 
-.balls div:hover{
+.balls div:hover {
     background: #fff;
 }
 
-.imgAtual{
+.imgAtual {
     transition: all 0.5s;
     background: #fff;
 }
 
-.banner{
+.banner {
     background: url(img/Neabi.png);
     width: 100%;
     height: 50vh;
 }
 
-.footer.footer{
+.footer.footer {
     background: #343435;
     position: relative;
 }
 
 
-.fale-conosco a{
+.fale-conosco a {
     text-decoration: none;
 }
 
-.contato{
+.contato {
     margin-left: 45px;
 }
 
@@ -177,27 +187,27 @@ header a:hover {
     align-items: center;
 }
 
-.footer.footer .container > div{
+.footer.footer .container > div {
     text-align: center;
     flex-grow: 1;
     flex-basis: 0;
     padding: 3rem 0.9rem;
 }
 
-.footer h2{
+.footer h2 {
     color:#f7f7f7;
 }
 
-.footer p{
+.footer p {
     font-size: 15px;
     color: hsl(262, 20%, 89%);
 }
 
-.footer .sobre-nos{
+.footer .sobre-nos {
     margin-left: 30px;
 }
 
-.rede-sociais{
+.rede-sociais {
     color: #fff;
     align-items: center;
 }

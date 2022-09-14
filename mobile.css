@@ -20,7 +20,10 @@ button#btn-mobile {
 }
 
 #nav.active li {
+    background-color: #e7e7e7;
     display: block;
+    height: auto;
+    width: 100vw;
     height: auto;
 }
 
@@ -36,7 +39,6 @@ button#btn-mobile {
 
 #menu a {
     padding: 1rem 0;
-    margin: 0 1rem;
     display: block;
 }
 
