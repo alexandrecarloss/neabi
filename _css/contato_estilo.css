@@ -7,19 +7,31 @@ main address {
    background-color: aliceblue;
 }
 
-main address div a{
+main address {
    text-align: center;
    flex-grow: 1;
    flex-basis: 0;
    align-items: center;
 }
 
+main address #infocontato {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   height: 20vh;
+   gap: 5px;
+   align-items: flex-start;
+}
+
+main address #infocontato p {
+   color: #0088a9;
+}
+
 main #containercontato {
    height: 100vh;
 }
 
-main #containercontato h1 {
-   color: #0088a9;
+main h1 {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main #containercontato #map {
@@ -28,6 +40,7 @@ main #containercontato #map {
 }
 
 div.formulario {
+   padding-top: 100px;
    display: flex;
    align-items:center;
    justify-content: right;
@@ -42,28 +55,28 @@ form div {
    margin-bottom: 5px; 
 }
 
-form input,textarea{
+form input,textarea {
    outline: none;
    padding: 1px;
    min-width: 1px;
    border: 1px solid rgb(112, 112, 112);
    border-radius: 5px;
-
 }
 
 form input:focus, form textarea:focus{
    border-radius: 16px;
 }
 
-form div.sub{
+form div.sub {
    background: transparent;
-   color: rgb(255, 255, 255);
+   color: white;
    cursor: pointer;
    border: 1px solid rgb(255, 255, 255);
    border-radius: 5px;
-   transition:all 1s;
-   margin-bottom: 20px;
+   transition: all 1s;
+   margin-bottom: 5px;
 }
+
 div.label{
    margin-left: 10px;
 }
