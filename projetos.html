@@ -9,7 +9,8 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <script src="https://kit.fontawesome.com/ca14b9e588.js"> crossorigin="anonymous"</script>
       <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>NEABI</title>
+    <title>Projetos</title>
+    
 </head>
 <body>
 <header id="header">
@@ -48,31 +49,7 @@
   </nav>  
 </header>
 <main>
-  <div class="slide">
-    <div class="slides">
-      <div id="voltar" class="btn">
-        <i class="fas fa-chevron-left"></i>
-      </div>
-      <div id="next" class="btn">
-        <i class="fas fa-chevron-right"></i>
-      </div>
-      <div id="atual" class="image">
-        <img src="img/front-view-young-male-student-in-white-t-shirt-wearing-black-mask-and-holding-yellow-files-on-light-blue-background.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="img/NEABIL.png" alt="">
-      </div>
-      <div class="image">
-        <img src="img/image.png" alt="">
-      </div>
-      <div class="image">
-        <img src="img/Neabi.png" alt="">
-      </div>
-    </div>
-      <div class="balls">
-      </div>
-  </div>
-    <div class="banner"></div>
+    
 </main>
 
 <footer class="footer">
@@ -110,68 +87,5 @@
 </footer>    
 </body>
 
-<script>
-   var balls = document.querySelector(".balls")
-   var quant = document.querySelectorAll(".slides .image")
-   var atual = 0
-   var imagem = document.getElementById("atual")
-   var next = document.getElementById("next")
-   var voltar =  document.getElementById("voltar")
-   var rolar = true
-  // Adicionei variável widthimg para ter o valor da largura da imagem atual
-   var widthimg = document.getElementById("atual").offsetWidth
-
-   for(let i=0; i < quant.length; i++){
-       var div = document.createElement("div")
-       div.id = i
-       balls.appendChild(div)
-   }
-   document.getElementById("0").classList.add("imgAtual")
-
-   var pos = document.querySelectorAll(".balls div")
-
-   for(let i=0; i< pos.length; i++){
-    pos[i].addEventListener("click", ()=>{
-        atual = pos[i].id
-        rolar = false
-        slide()
-    })
-   }
-
-   voltar.addEventListener("click", ()=>{
-        atual--
-        rolar = false
-        slide()
-   })
-   next.addEventListener("click", ()=>{
-        atual++
-        rolar = false
-        slide()
-   })
-
-   function slide(){
-    if(atual >= quant.length){
-        atual = 0
-    }
-    else if(atual < 0){
-      atual = quant.length-1
-    }
-    document.querySelector(".imgAtual").classList.remove("imgAtual")
-    
-    //Usei a variável widthimg no lugar de 1024
-    imagem.style.marginLeft = -widthimg*atual+"px"
-
-    document.getElementById(atual).classList.add("imgAtual")
-  }
-  setInterval(()=>{
-    if(rolar){
-    atual++
-    slide()
-    }
-    else{
-      rolar = true
-    }
-  },4000)
-</script>
 <script src="script.js"></script>
 </html>

@@ -8,8 +8,108 @@
       <link rel="stylesheet" href="mobile.css" media="screen and (max-width:768px)">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <script src="https://kit.fontawesome.com/ca14b9e588.js"> crossorigin="anonymous"</script>
-      <link rel="stylesheet" href="_css/contato_estilo.css">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Contato</title>
+    <style>
+      main address {
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   background-color: white;
+      }
+
+      main address {
+        text-align: center;
+        flex-grow: 1;
+        flex-basis: 0;
+        align-items: center;
+      }
+
+      main address #infocontato {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        height: auto;
+        gap: 5px;
+        align-items: flex-start;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+      }
+
+      address h1 {
+        color: #0088a9;
+      }
+      
+      main address #infocontato h2 {
+        font-size: 1.2em;
+        color: #0088a9;
+      }
+
+      main #containercontato {
+        height: 100vh;
+      }
+
+      main h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      main #containercontato #map {
+        width: 100%;
+        height: 100%;
+      }
+
+      div.formulario {
+        padding-top: 100px;
+        display: flex;
+        align-items:center;
+        justify-content: right;
+        flex-direction: column;
+        background: #aaaaaa;
+        height: 100vh;
+      }   
+        
+      form div {
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 5px; 
+      }
+
+      form input,textarea {
+        outline: none;
+        padding: 1px;
+        min-width: 1px;
+        border: 1px solid rgb(112, 112, 112);
+        border-radius: 5px;
+      }
+
+      form input:focus, form textarea:focus{
+        border-radius: 16px;
+      }
+
+      form div.sub {
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        transition: all 1s;
+        margin-bottom: 5px;
+      }
+
+      div.label{
+        margin-left: 10px;
+      }
+
+      @media (max-width: 768px) {
+        main {
+            height: 250vh;
+        }
+
+        main address #infocontato {
+          grid-template-columns: 1fr;
+          height: auto;
+        }
+
+      }
+    </style>
 </head>
 <body>
 <header id="header">
@@ -48,29 +148,7 @@
   </nav>  
 </header>
 <main>
-    <address>
-        <h1>INFORMAÇÕES DE CONTATO</h1>
-        <div id="infocontato">
-            <div>
-                <p>SEDE</p>
-            </div>
-            <div>
-                <p>CONTATO</p>
-            </div>
-            <div>
-                <p>EMAIL DO NEABI</p> 
-            </div>
-            <div>
-                <p>TELEFONE DO NEABI</p>
-            </div>
-            <div>
-                <p>HORÁRIO DO NEABI</p> 
-            </div>
-            <div>
-                <p>ENDEREÇO DA REITORIA</p>
-            </div>
-        </div>
-    </address>
+    
     <div id="containercontato">
         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.3263258240686!2d-60.17108628524235!3d-3.2689557976200896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926bf511655a0c51%3A0x1165fcf8872934e2!2sInstituto%20Federal%20do%20Amazonas%20-%20Campus%20Avan%C3%A7ado%20Iranduba!5e0!3m2!1spt-BR!2sbr!4v1661884057881!5m2!1spt-BR!2sbr">
         </iframe>   
@@ -115,6 +193,35 @@
         </div>
     </div>
     <div class="banner"></div>
+    <address>
+      <h1>INFORMAÇÕES DE CONTATO</h1>
+      <div id="infocontato">
+          <div>
+              <h2>SEDE</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eius nesciunt illum explicabo reprehenderit inventore quibusdam alias perferendis cum voluptates voluptatum nemo repellat ad placeat. Neque recusandae eius ex pariatur?</p>
+          </div>
+          <div>
+              <h2>CONTATO</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error consectetur molestias iusto nemo exercitationem dolor culpa at dolorem totam temporibus. Quibusdam, perspiciatis dolores voluptates laudantium necessitatibus ex animi accusamus magni!</p>
+          </div>
+          <div>
+              <h2>EMAIL DO NEABI</h2> 
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus consequuntur dolorem animi nesciunt sequi delectus dicta, iusto ad fugit maiores iste iure adipisci debitis nostrum qui cumque sint ipsum impedit!</p>
+          </div>
+          <div>
+              <h2>TELEFONE DO NEABI</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quibusdam. Odit, itaque sint harum distinctio sapiente quisquam et culpa tempore dolores consequatur magni delectus placeat eius, officia, recusandae tenetur est.</p>
+          </div>
+          <div>
+              <h2>HORÁRIO DO NEABI</h2> 
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit modi dignissimos, provident laborum velit ipsa excepturi neque minus officiis ipsam, nulla beatae necessitatibus numquam nostrum culpa tempora. Natus, unde est.</p>
+          </div>
+          <div>
+              <h2>ENDEREÇO DA REITORIA</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore natus illum sequi accusamus ex, consequatur ullam! Aperiam rem possimus nihil, sequi inventore culpa repellendus in, amet eveniet, quibusdam dolores itaque.</p>
+          </div>
+      </div>
+  </address>
 </main>
 
 <footer class="footer">

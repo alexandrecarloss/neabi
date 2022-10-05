@@ -87,6 +87,9 @@ button#btn-mobile {
     top: -7px;
 }
 
+#next, #voltar {
+    top: 30%;
+}
 .image img {
     width: 100vw;
     height: 300px;  
