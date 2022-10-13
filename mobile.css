@@ -8,6 +8,10 @@ button#btn-mobile {
     width: 100vw;
 }
 
+header a {
+    border-radius: 0px;
+}
+
 #menu {
     display: block;
     width: 100%;

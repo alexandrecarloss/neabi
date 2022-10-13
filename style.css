@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* Definição de root para facilitar a mudança de cores */
+:root {
+    --cor0: rgb(4,21,36);
+    --cor1:  #e7e7e7;
+    --cor2: #0088a9;
+    --cor3: #343435;
+}
+
 *{
     margin: 0; 
     padding: 0;
@@ -8,7 +16,7 @@
 }
 
 body{
-    background: rgb(4,21,36);
+    background: var(--cor0);
     
     height: 100vh;
     align-items: center;
@@ -20,7 +28,7 @@ body{
     height: 130px;
     display: flex;
     justify-content: space-between;
-    background: #e7e7e7;
+    background: var(--cor1);
     align-items: center;
 }
 
@@ -47,7 +55,7 @@ nav ul {
     list-style: none;
     height: 130px;
     width: 100%; 
-    background: #e7e7e7; 
+    background: var(--cor1); 
     align-items: center;
     flex-wrap: wrap;
     align-items: center;
@@ -73,13 +81,13 @@ a {
 header a {
     padding: 20px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 
 a:hover {
     background: rgba(0, 0, 0, 0.5);
     font-weight: bold;
-    color: #0088a9;
+    color: var(--cor2)
     
 }
 
@@ -88,13 +96,15 @@ a:visited {
 }
 
 a:visited:hover {
-    color: #0088a9;
+    color: var(--cor2)
 }
 
 .text {
     padding: 20px 8%;
 }
- /* main */
+
+                        /* main */
+
 .slide {
     width: 100vw;
     height: 576px;
@@ -188,7 +198,7 @@ main #containercontato {
 
  /* footer */
 .footer.footer {
-    background: #343435;
+    background: var(--cor3);
     position: relative;
 }
 
