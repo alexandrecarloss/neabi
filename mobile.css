@@ -12,6 +12,11 @@ header a {
     border-radius: 0px;
 }
 
+header #logo {
+    height: 130px;
+    width: 130px;
+}
+
 #menu {
     display: block;
     width: 100%;
