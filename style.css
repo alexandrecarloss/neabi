@@ -182,9 +182,13 @@ a:visited:hover {
 }
 
 .banner {
-    background: url(img/Neabi.png);
+    background: url(img/slide4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     width: auto;
     height: 50vh;
+    
 }
 
 main {

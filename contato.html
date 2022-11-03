@@ -26,10 +26,11 @@
       }
 
       main address #infocontato {
-        display: flex;
-        /* display: grid;
-        grid-template-columns: repeat(6, 1fr); */
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         height: auto;
+        
         gap: 5px;
         align-items: baseline;
         border: 1px solid rgba(0, 0, 0, 0.5);
@@ -101,7 +102,6 @@
 
         main address #infocontato {
           display: block;
-          height: 100vh;
         }
 
         main #containercontato #map {
@@ -110,11 +110,14 @@
         }
 
         address {
-          height: 100vh;
           overflow: auto;
           display: block;
         }
 
+        #infocontato h2 {
+          margin-top: 15px;
+          background-color: rgba(0, 0, 0, 0.099);
+        }
       }
     </style>
 </head>
@@ -160,27 +163,18 @@
       <div id="infocontato">
           <div>
               <h2>SEDE</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eius nesciunt illum explicabo reprehenderit inventore quibusdam alias perferendis cum voluptates voluptatum nemo repellat ad placeat. Neque recusandae eius ex pariatur?</p>
-          </div>
-          <div>
-              <h2>CONTATO</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error consectetur molestias iusto nemo exercitationem dolor culpa at dolorem totam temporibus. Quibusdam, perspiciatis dolores voluptates laudantium necessitatibus ex animi accusamus magni!</p>
+              <p>EETI - Maria Izabel Ferreira Xavier Desterro e Silva, Rodovia Carlos Braga Km 1, s/n - Zona Rural, Iranduba - AM
+              CEP: 69415-000
+              </p>
           </div>
           <div>
               <h2>EMAIL DO NEABI</h2> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus consequuntur dolorem animi nesciunt sequi delectus dicta, iusto ad fugit maiores iste iure adipisci debitis nostrum qui cumque sint ipsum impedit!</p>
+              <p>neabi.cir@ifam.edu.br</p>
           </div>
-          <div>
-              <h2>TELEFONE DO NEABI</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quibusdam. Odit, itaque sint harum distinctio sapiente quisquam et culpa tempore dolores consequatur magni delectus placeat eius, officia, recusandae tenetur est.</p>
-          </div>
+    
           <div>
               <h2>HORÁRIO DO NEABI</h2> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit modi dignissimos, provident laborum velit ipsa excepturi neque minus officiis ipsam, nulla beatae necessitatibus numquam nostrum culpa tempora. Natus, unde est.</p>
-          </div>
-          <div>
-              <h2>ENDEREÇO DA REITORIA</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore natus illum sequi accusamus ex, consequatur ullam! Aperiam rem possimus nihil, sequi inventore culpa repellendus in, amet eveniet, quibusdam dolores itaque.</p>
+              <p></p>
           </div>
       </div>
   </address>
@@ -189,7 +183,7 @@
         </iframe>   
         
         <div class="formulario">
-            <form method="post" id="fcontato" action="https://formsubmit.co/emaildoprofessor@gmail.com">
+            <form method="post" id="fcontato" action="https://formsubmit.co/neabi.cir@ifam.edu.br">
               <input type="hidden" name="_next" value="https://alexandrecarloss.github.io/neabi/email.html">
               <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo contato e logo responderemos!">
                 <fieldset id="usuario">
