@@ -96,9 +96,14 @@ header #logo {
     top: -7px;
 }
 
-#next, #voltar {
-    top: 30%;
+main {
+    display: block;
 }
+
+#next {
+    right: 3%;
+}
+
 .image img {
     width: 100vw;
     height: 300px;  
