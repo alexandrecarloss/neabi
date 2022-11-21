@@ -100,6 +100,14 @@ main {
     display: block;
 }
 
+main .imagemlado {
+    width: 100vw;
+}
+
+main .divisão {
+    display: block;
+}
+
 #next {
     right: 3%;
 }

@@ -200,6 +200,16 @@ main {
     min-height: 100vh;
 }
 
+main .imagemlado {
+    width: 50vw;
+    height: 100vh;
+}
+
+main .divisão {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 main #containercontato {
     display: grid;
     grid-template-columns: 1fr 1fr;
